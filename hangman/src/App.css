@@ -1,0 +1,75 @@
+/* CSS styles for the Hangman game */
+
+/* Styles the container element for the Hangman game.
+   Aligns the content to the center and adds a top margin of 40 pixels. */
+.App {
+  text-align: center;
+  margin-top: 40px;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Styles the game results.*/
+
+.game-results { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Styles the element that displays the hidden word with underscores.
+   Adds a margin of 20 pixels vertically and sets the font size to 24 pixels. */
+.word-display {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+/* Styles the element that contains the letter buttons for user input.
+   Displays the buttons in a flex layout, wraps them to the next line if necessary,
+   and centers them horizontally. Adds a bottom margin of 20 pixels. */
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Styles the letter buttons.
+   Adds margins, padding, font size, and sets the background color to green (#4caf50)
+   with white text. Removes the border and sets the cursor to a pointer. */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles the disabled letter buttons.
+   Changes the background color to gray (#ccc) and sets the cursor to not-allowed. */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styles the element that displays the game result and restart button.
+   Adds a top margin of 20 pixels. */
+.game-result {
+  margin-top: 20px;
+}
+
+/* Styles the paragraph element within the game result element.
+   Sets the font size to 20 pixels and adds a bottom margin of 10 pixels. */
+.game-result p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styles the restart button within the game result element.
+   Sets the font size to 16 pixels and adds padding to the button. */
+.game-result button {
+  font-size: 16px;
+  padding: 5px 10px;
+}
